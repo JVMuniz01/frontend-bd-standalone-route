@@ -1,1 +1,26 @@
-<p>segundo works!</p>
+<table mat-table [dataSource]="produtos" class="table-content mat-elevation-z8">
+  <ng-container matColumnDef="nome">
+    <th mat-header-cell *matHeaderCellDef> Nome do Produto </th>
+    <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+  </ng-container>
+
+    <ng-container matColumnDef="descricao">
+    <th mat-header-cell *matHeaderCellDef> Descrição </th>
+    <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="qtd">
+    <th mat-header-cell *matHeaderCellDef> Quantidade de itens </th>
+    <td mat-cell *matCellDef="let element"> {{element.qtd}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="valor">
+    <th mat-header-cell *matHeaderCellDef> Valor total de Transporte </th>
+    <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="colunasNome"></tr>
+  <tr mat-row *matRowDef="let row; columns: colunasNome;"></tr>
+
+</table>
+

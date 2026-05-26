@@ -7,22 +7,22 @@
   -->
   <div class="menu__item" routerLinkActive="menu__item--selected" [routerLinkActiveOptions]="{ exact: true }">
     <a class="menu__link" routerLink="/">
-      Inicial
+      Produtos Vendidos
     </a>
   </div>
   <div class="menu__item" routerLinkActive="menu__item--selected" [routerLinkActiveOptions]="{ exact: true }" #rlaBase="routerLinkActive">
     <a class="menu__link" routerLink="componentes">
-      Base  {{rlaBase.isActive ? 'Ativado': ''}}
+      Vendedores Produtos
     </a>
   </div>
   <div class="menu__item" routerLinkActive="menu__item--selected"[routerLinkActiveOptions]="{ exact: true }" #rlaPrimeiro="routerLinkActive">
       <a class="menu__link" routerLink="componentes/primeiro">
-        Primeiro  {{rlaPrimeiro.isActive ? 'Ativado': ''}}
+        Vendas Clientes 
       </a>
   </div>
   <div class="menu__item" routerLinkActive="menu__item--selected"[routerLinkActiveOptions]="{ exact: true }" #rlaSegundo="routerLinkActive">
       <a class="menu__link" routerLink="componentes/segundo">
-        Segundo {{rlaSegundo.isActive ? 'Ativado' : ''}}
+        Segundo 
       </a>
   </div>
 </div>

@@ -18,24 +18,24 @@ export const routes: Routes = [
         // Visualizamos duas coisas aqui: Quando carregar /componentes -> loadComponent () => Importo o caminho do componente -> Então (modulo => modulo.Base <- Nome da classe ts do component)
         {
                 path: '',
-                title: 'Inicial',
+                title: 'Produtos Vendidos',
                 component: Inicial,
         },
         {
                 path: 'componentes',
-                 title: 'Base',
+                 title: 'Vendedores',
                 loadComponent: () => import('./components/base/base').then(m => m.Base)
         },
 
         {
                 path: 'componentes/primeiro', 
-                title: 'Primeiro',
+                title: 'Clientes',
                 loadComponent: () => import('./components/primeiro/primeiro').then(m => m.Primeiro)
         },
 
         {
                 path: 'componentes/segundo',
-                 title: 'Segundo',
+                 title: 'Produtos',
                 loadComponent: () => import('./components/segundo/segundo').then(m => m.Segundo)
         },
 
